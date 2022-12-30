@@ -1,0 +1,85 @@
+extends layout.pug
+
+block style 
+    style 
+       include ../static/css/style.css
+       include ../static/css/utility.css
+       include ../static/css/onlineadmission.css
+
+block content
+      section#onadmhead
+        h1 Procedure 
+        p Admission in GHS Kholian Bala will take following steps.
+        hr 
+      section#adm-steps
+        div.on-adm-cards-row1
+            div.on-adm-cards
+              h1 Step 1
+              p First of all you will need to take a admission form
+                | from school by hand or apply online from below.
+            div.on-adm-cards
+              h1 Step 2
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci ex. Fuga nisi vero maxime.
+            div.on-adm-cards
+              h1 Step 3
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci ex. Fuga nisi vero maxime.
+            
+        div.on-adm-cards-row2
+            div.on-adm-cards
+              h1 Step 4
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci ex. Fuga nisi vero maxime.
+            div.on-adm-cards
+              h1 Step 5
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci ex. Fuga nisi vero maxime.
+            div.on-adm-cards
+              h1 Step 6
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, adipisci ex. Fuga nisi vero maxime.
+      section#onadmform 
+        h1 Form 
+        form(action="/onlineadmission" method="post") 
+          div.name-fathername
+            div.name
+              label(for="name") Name 
+              input(type="text" name="name" id="name" placeholder="Name")
+            div.father-name
+              label(for="fathername") Father Name
+              input(type="text" name="fathername" id="fathername" placeholder="Father Name")
+          div.dofb-age    
+            div.dofb
+              label(for="age") Date Of Birth
+              input(type="text" name="dofb" id="dofb" placeholder="Date Of Birth")
+            div.age
+              label(for="age") Age
+              input(type="text" name="age" id="age" placeholder="Age")
+            
+          div.gardian-proffession-job    
+            div.g-proffession
+              label(for="g-proffession") Guardian Profession
+              input(type="text" name="gardianproffession" id="g-proffession" placeholder="Guardian Profession")
+            div.g-job-title
+              label(for="g-job-title") Guardian Job Title
+              input(type="text" name="gardianjobtitle" id="g-job-title" placeholder="Guardian Job Title")
+          div.contact-email    
+            div.contact
+              label(for="contact") Contact
+              input(type="text" name="contact" id="contact" placeholder="Contact")
+            div.email
+              label(for="email") Email
+              input(type="text" name="email" id="email" placeholder="myemail@gmail.com")
+          div.g-contact-email    
+            div.g-email
+              label(for="gardianemail") Gardian Email
+              input(type="text" name="gardianemail" id="gardianemail" placeholder="Gardian Email")
+            div.g-contact
+              label(for="gardiancontact") Gardian Contact
+              input(type="text" name="gardiancontact" id="gardiancontact" placeholder="Gardian Contact")            
+          div.g-CNC-form-b    
+            div.gardiancnc
+              label(for="gardiancnc") Gardian CNC
+              input(type="text" name="gardiancnc" id="gardiancnc" placeholder="Gardian CNC")      
+            div.form-b
+              label(for="form-b") Form-B
+              input(type="text" name="form-b" id="form-b" placeholder="Form-B")      
+          input(type="submit")
+block foot 
+    footer 

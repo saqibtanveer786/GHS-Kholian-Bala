@@ -1,0 +1,190 @@
+body {
+    text-align: center;
+}
+
+.navbar ul li a{
+    color: red;
+}
+
+#onadmhead {
+    width: 900px;
+    margin: auto;
+}
+
+h1,
+p {
+    font-family: sans-serif;
+}
+
+#onadmhead>h1 {
+    font-size: 50px;
+    margin-top: 35px;
+    color: rgb(15, 47, 107);
+
+}
+
+p {
+    margin: 30px 0 85px 0;
+}
+
+#onadmhead>hr {
+    border: 2px solid gray;
+}
+
+/* Admission Steps Cards Section */
+
+#adm-steps {
+    height: 90vh;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#adm-steps .on-adm-cards-row1,
+.on-adm-cards-row2 {
+    height: 44vh;
+    width: 100%;
+    /* background-color: black; */
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.on-adm-cards-row2 {
+    margin-top: 30px
+}
+
+.on-adm-cards {
+    height: 300px;
+    width: 20vw;
+    border: 1px solid rgb(15, 47, 107);
+    border-radius: 20px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.on-adm-cards>h1 {
+    padding: 30px 0 0 0;
+    color: rgb(15, 47, 107);
+}
+
+.on-adm-cards>p {
+    padding-top: 20px;
+    line-height: 1.5rem;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+/* Form */
+
+#onadmform {
+    padding-top: 100px;
+       
+}
+
+#onadmform h1 {
+    font-size: 61px;
+    font-family: sans-serif;
+    color: rgb(15, 47, 107)
+}
+
+.name-fathername,
+.age-gender,
+.gardian-proffession-job,
+.contact-email,
+.g-contact-email,
+.g-CNC-form-b,
+.dofb-age    {
+    display: flex;
+    justify-content: center; 
+}
+
+.name,
+.father-name,
+.age,
+.dofb,
+.g-proffession,
+.g-job-title,
+.contact,
+.email,
+.g-email,
+.g-contact,
+.gardiancnc,
+.form-b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 13px 20px 13px 30px;
+    font-family: sans-serif;
+}
+
+label {
+    padding-left: 10px;
+    color: rgb(180, 179, 179);
+    font-size:  small;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin-top: 8px;
+    padding: 4px 7px;
+    border: 1px solid rgb(221 219 219);
+    color: rgb(221 219 219) s;
+    border-radius: 3px;
+    outline: none;
+}
+
+input::placeholder{
+    color: rgb(221 219 219);
+}
+
+
+@media(max-width: 800px){
+    
+}
+
+
+@media(max-width: 1156px){
+
+    #onadmhead{
+        display: none;
+    }
+
+    #adm-steps{
+        display: none;
+    }
+
+    #onadmform{
+        padding-top: 40px;
+    }
+
+    .name-fathername,
+.age-gender,
+.gardian-proffession-job,
+.contact-email,
+.g-contact-email,
+.g-CNC-form-b,
+.dofb-age {
+    flex-direction: column;
+    align-items: center;
+}
+
+    input{
+        width: 350px;
+    }
+    /* #adm-steps .on-adm-cards-row1 {
+        display: block;
+        display: none;
+    }
+
+    #adm-steps .on-adm-cards-row2 {
+        display: none;
+    } */
+}

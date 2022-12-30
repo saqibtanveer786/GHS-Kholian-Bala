@@ -1,0 +1,35 @@
+//- layout.pug
+html
+  head
+    title GHS Kholian Bala
+    block scripts
+      script(src='../static/index.js')
+    block style 
+        style 
+          include ../static/css/style.css
+          include ../static/css/about.css
+        
+  body
+
+    nav.navbar 
+        div#logo
+            img(src="../static/images/img for logo/logo.jpg", alt="", srcset="")
+        div#ulhead
+          hr
+          ul 
+            li #[a(href="/") Home]
+            li #[a(href="/about") About Us]
+            //- li #[a(href="/") Our Staff]
+            //- li #[a(href="/") Our Facilities]
+            li #[a(href="/onlineadmission") Online Admission]
+          hr  
+    div.hamburger#hamburger
+        div.line 
+        div.line 
+        div.line 
+  
+
+    block content
+    block foot
+        
+            

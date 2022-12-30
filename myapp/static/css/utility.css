@@ -1,0 +1,14 @@
+.btn{
+    padding: 7px 30px;
+    color: rgb(44, 137, 243);
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
